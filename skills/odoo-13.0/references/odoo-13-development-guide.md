@@ -313,6 +313,20 @@ To prevent regressions during refactoring (like the "ParseError: has no attribut
 2.  **Initial Data Verification**: Methods like `init_csv_data` or `uninstall_custom_models` are often triggered by Odoo's internal registry during addon updates. They must remain in the base model or be explicitly imported in `__init__.py`.
 3.  **Migration Testing**: Always attempt a dry-run update (`odoo-bin -u <module_name> --stop-after-init`) to ensure the `data.xml` files still parse correctly with the new architecture.
 
+
+---
+
+## Advanced Architecture: Mixins & Service Objects
+
+For complex models (e.g., Localizations, EDI), avoid "God Objects". Use **Separation of Concerns**:
+
+1.  **Model Fragmentation (Mixins)**: Split logic into specialized files using multiple inheritance (`_inherit`).
+    *   `res_company.py`: Core fields.
+    *   `res_company_onboarding.py`: UI and state logic.
+    *   `res_company_api.py`: External integration glue.
+2.  **Service Objects**: Move HTTP/Heavy logic to pure Python classes in `utils/`.
+3.  **Encapsulation**: Models should delegate to services, not implement raw network logic.
+
 ## Exception Reference
 
 ### UserError

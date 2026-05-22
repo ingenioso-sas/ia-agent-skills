@@ -98,6 +98,13 @@ Antes de crear el technical spec, asegúrate de haber leído el platform desde `
 
 > **Tecnologías Restringidas**: Si es backend/web, todo se mapea a gary. MongoDB → NoSQL, Kafka → BigQueue/Streams, S3 → Object Storage.
 
+
+> **Blindaje contra Ambigüedad (Mandatorio)**: Si la feature implica integraciones (APIs), constantes técnicas o rangos fijos, el Spec Técnico DEBE incluir un **"Anexo de Datos Maestros"**. Este debe contener:
+- Payloads JSON de ejemplo (Request/Response).
+- Tablas de constantes y valores hardcoded necesarios.
+- Paths exactos de navegación de objetos complejos.
+NUNCA asumas que el implementador tiene acceso al historial de la entrevista.
+
 **Diagramas (Obligatorio)**:
 Tras la validación, siempre muestra un resumen que incluya un diagrama ASCII de la arquitectura usando estas formas obligatorias:
 - Aplicaciones: Rectángulos `[ ]`
