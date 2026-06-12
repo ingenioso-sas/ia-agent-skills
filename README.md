@@ -52,6 +52,7 @@ In-depth guides written specifically for AI consumption:
 | **[Odoo 13.0](skills/odoo-13.0/)** | Odoo 13 development (ORM, views, classic JS, security, reports) |
 | **[Odoo 18.0](skills/odoo-18.0/)** | Odoo 18 development (ORM, views, security, OWL, reports, migrations, performance) |
 | **[Odoo 19.0](skills/odoo-19.0/)** | Odoo 19 development guide with current conventions |
+| **[Odoo Generate Translation](skills/odoo-generate-translation/)** | Generate and export translation files (.po) for Odoo addons |
 | **[DTG Base](skills/dtg-base/)** | DTGBase utilities (date/period, timezone, batch, barcode, Vietnamese text) |
 | **[Payment Integration](skills/payment-integration/)** | SePay, Polar, Stripe, Paddle, Creem.io and related patterns |
 | **[Code Review](skills/code-review/)** | Standards and workflows for automated code review |
@@ -96,6 +97,7 @@ agent-skills/
 │   ├── dev-finish/            # Finalization (/dev.finish)
 │   ├── odoo-18.0/             # Odoo 18 guides
 │   ├── odoo-19.0/             # Odoo 19 guides
+│   ├── odoo-generate-translation/ # Odoo translation exporter
 │   ├── brainstorming/         # Ideation and spec review
 │   ├── writing-skills/        # Authoring AI skills
 │   ├── mcp-builder/           # MCP servers
