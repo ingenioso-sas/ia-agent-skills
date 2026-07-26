@@ -4,8 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-### Added
+### Changed
 - TODO: Add upcoming changes here.
+
+## [1.1.0]
+
+### Added
+- Added new Pigsty infrastructure skills: `pigsty-app-specialist`, `pigsty-dashboard-specialist`, `pigsty-log-cache-cleaner`, and `pigsty-target-manager`.
 
 ## [1.0.8]
 
